@@ -47,9 +47,9 @@ public class ExcelHelper {
 	}
 	public void write() throws Exception{
 		 FileOutputStream fileOut;
-         fileOut = new FileOutputStream("file.xls");
+         fileOut = new FileOutputStream("./src/test/resources/reports/Friday PerfTest.xls");
          HSSFWorkbook workbook = new HSSFWorkbook();
-         HSSFSheet worksheet = workbook.createSheet("Sheet 0");
+         HSSFSheet worksheet = workbook.createSheet("Report");
          worksheet.addMergedRegion(new CellRangeAddress(0,0,2,5));
          worksheet.addMergedRegion(new CellRangeAddress(0,0,6,9));
          worksheet.addMergedRegion(new CellRangeAddress(0,0,10,13));
