@@ -20,7 +20,7 @@ public class DB {
 
     public static Connection createConnection() throws Exception {
         Class.forName("com.mysql.jdbc.Driver").newInstance();
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/performance", "root", "root");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/performance", "root", "");
         return c;
     }
 
