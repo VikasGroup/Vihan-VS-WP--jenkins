@@ -82,7 +82,7 @@ public class PerfSteps {
 
 	@Given("^User Clear Database$")
 	public  void User_Clear_Database() throws Throwable {
-	DB.update("delete from time");
+	//DB.update("delete from time");
 	}
 	
 	/*-----------------------------------VIHAN TEST----------------------------------------------*/
